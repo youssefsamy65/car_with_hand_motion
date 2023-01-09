@@ -4,9 +4,9 @@ int main()
 	ADC_Initialize();// to Initialize Analog to Digital convartor
 	LCD_Initialize();
 	UART_Initialize(Asynchronous,Disable,Bit_1,Bits_8);// to Initialize UART Communication protocol
-	int volt_on_pot1; // to Received the value of POT1 IN it
-	int volt_on_pot2; // to Received the value of POT2 IN it
-	int volt_on_pot3; // to Received the value of POT3 IN it
+	UINT16 volt_on_pot1; // to Received the value of POT1 IN it
+	UINT16 volt_on_pot2; // to Received the value of POT2 IN it
+	UINT16 volt_on_pot3; // to Received the value of POT3 IN it
 	while(1)
 	{
 		volt_on_pot1=ADC_Read(ADC0);
